@@ -1,0 +1,80 @@
+{
+  "المقبلات": {
+    "الباردة": [
+      {
+        "name": "تبولة",
+        "description": "سلطة مشهورة مكونة من البرغل والبقدونس والطماطم والليمون.",
+        "price": "5000 ل.س",
+        "image": "public/uploads/tabbouleh.jpg"
+      },
+      {
+        "name": "متبل",
+        "description": "باذنجان مهروس مع الطحينة والثوم وعصير الليمون.",
+        "price": "4500 ل.س",
+        "image": "public/uploads/mutabbal.jpg"
+      }
+    ],
+    "الساخنة": [
+      {
+        "name": "كبة مقلية",
+        "description": "كرات من البرغل محشوة باللحم والمكسرات ومقلية.",
+        "price": "6000 ل.س",
+        "image": "public/uploads/kibbeh.jpg"
+      }
+    ]
+  },
+  "الأطباق الرئيسية": {
+    "دجاج": [
+      {
+        "name": "شاورما دجاج",
+        "description": "شرائح دجاج متبلة مشوية تقدم مع الثوم والبطاطا.",
+        "price": "8000 ل.س",
+        "image": "public/uploads/chicken_shawarma.jpg"
+      }
+    ],
+    "لحوم": [
+      {
+        "name": "كباب حلبي",
+        "description": "أسياخ لحم مفروم مشوي مع البقدونس والتوابل.",
+        "price": "9500 ل.س",
+        "image": "public/uploads/kabab.jpg"
+      }
+    ]
+  },
+  "الحلويات": {
+    "شرقية": [
+      {
+        "name": "بقلاوة",
+        "description": "عجينة رقيقة محشوة بالمكسرات ومغطاة بالقطر.",
+        "price": "7000 ل.س",
+        "image": "public/uploads/baklava.jpg"
+      }
+    ],
+    "غربية": [
+      {
+        "name": "تشيز كيك",
+        "description": "كيكة بالجبن الكريمي مع طبقة من الفواكه.",
+        "price": "8500 ل.س",
+        "image": "public/uploads/cheesecake.jpg"
+      }
+    ]
+  },
+  "المشروبات": {
+    "عصائر": [
+      {
+        "name": "عصير برتقال",
+        "description": "عصير طازج غني بفيتامين C.",
+        "price": "3000 ل.س",
+        "image": "public/uploads/orange_juice.jpg"
+      }
+    ],
+    "ساخنة": [
+      {
+        "name": "قهوة عربية",
+        "description": "قهوة سادة مع هيل.",
+        "price": "2500 ل.س",
+        "image": "public/uploads/arabic_coffee.jpg"
+      }
+    ]
+  }
+}
