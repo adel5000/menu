@@ -1,0 +1,105 @@
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f7f7f7;
+}
+
+h2 {
+  color: #b22222;
+  margin-top: 40px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input,
+textarea,
+select,
+button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background: #b22222;
+  color: #fff;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* تصميم أزرار الحذف بشكل منفصل حسب النوع */
+.delete-btn {
+  border: none;
+  padding: 2px 8px;
+  margin-left: 8px;
+  cursor: pointer;
+  border-radius: 3px;
+  color: white;
+  font-size: 11px;
+  line-height: 1;
+  min-width: 55px;
+  height: 28px;
+  width: auto;
+  white-space: nowrap;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+/* ألوان مختلفة لأزرار الحذف حسب نوع العنصر */
+.delete-main {
+  background-color: #cc0000; /* أحمر غامق للصنف الرئيسي */
+}
+.delete-main:hover {
+  background-color: #a30000;
+}
+
+.delete-sub {
+  background-color: #e67300; /* برتقالي للصنف الفرعي */
+}
+.delete-sub:hover {
+  background-color: #b35a00;
+}
+
+.delete-item {
+  background-color: #b22222; /* أحمر متوسط للعنصر */
+}
+.delete-item:hover {
+  background-color: #7f1616;
+}
+
+/* تصفيف الأسطر والعناصر */
+.category-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  margin-top: 8px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+}
+
+/* لإجبار العنصر النصي على البقاء ضمن المساحة */
+.category-item > span {
+  flex-grow: 1;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* تخصيص أزرار الحذف داخل كل سطر */
+.category-item .delete-btn {
+  margin-left: 12px;
+  flex-shrink: 0;
+}

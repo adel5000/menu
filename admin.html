@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>لوحة إدارة المنيو</title>
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body>
+
+  <h1>لوحة إدارة قائمة الطعام</h1>
+
+  <div id="loading">جاري تحميل البيانات...</div>
+
+  <div id="adminPanel" style="display:none">
+
+    <!-- إضافة صنف رئيسي -->
+    <h2>إضافة صنف رئيسي</h2>
+    <label>اسم الصنف الرئيسي:</label>
+    <input type="text" id="mainCategoryInput" />
+    <button onclick="addMainCategory()">إضافة</button>
+
+    <!-- إضافة صنف فرعي -->
+    <h2>إضافة صنف فرعي</h2>
+    <label>الصنف الرئيسي:</label>
+    <select id="mainSelectForSub"></select>
+    <label>اسم الصنف الفرعي:</label>
+    <input type="text" id="subCategoryInput" />
+    <button onclick="addSubCategory()">إضافة</button>
+
+    <!-- إضافة عنصر منيو -->
+    <h2>إضافة عنصر منيو</h2>
+    <div class="flex-row">
+      <div>
+        <label>الصنف الرئيسي:</label>
+        <select id="mainSelectForItem" onchange="updateSubForItem()"></select>
+      </div>
+      <div>
+        <label>الصنف الفرعي:</label>
+        <select id="subSelectForItem"></select>
+      </div>
+    </div>
+
+    <label>اسم العنصر:</label>
+    <input type="text" id="itemNameInput" />
+    <label>الوصف:</label>
+    <textarea id="itemDescInput"></textarea>
+    <label>السعر:</label>
+    <input type="text" id="itemPriceInput" />
+    <label>الصورة:</label>
+    <input type="file" id="itemImageInput" accept="image/*" />
+    <button onclick="addMenuItem()">إضافة العنصر</button>
+
+    <!-- عرض البيانات مع أزرار حذف -->
+    <h2>البيانات المخزنة (JSON)</h2>
+    <div id="menuDisplay"></div>
+
+    <button onclick="resetData()">🔄 إعادة ضبط القائمة</button>
+  </div>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>
